@@ -1,0 +1,547 @@
+/*Global*/
+
+body {
+    background-image : url("../images/5-dots.png");
+    background-repeat: repeat;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    width:960px;
+    margin:auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1, h2 {
+    color:#4aaaa5;
+    font-family:"Georgia", Times, "Times New Roman", serif;
+    font-weight:bold;
+}
+
+h1 {
+    font-size:2.2em;
+}
+
+h2 {
+    font-size:1.8em;
+}
+
+strong {
+    font-weight:bold;
+}
+
+#toppane {
+    background:#666666;
+    border-bottom: 15px solid #4aaaa5;
+}
+
+#sitename {
+    background-color:#d8d8d8;
+    color:#4aaaa5;
+    font-family: "Georgia", "Times", "Times New Roman", serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    float:left;
+    width:25%;
+    padding: 30px 40px;
+}
+
+#sitemenu {
+    font-size: 2.0em;
+    color:#ffffff;
+    float: right;
+    padding: 80px 15px;
+}
+
+#sitemenu a {
+    color:#ffffff;
+    text-decoration:none;
+    border-right:2px #ffffff;
+    margin:0 15px;
+    padding-right:35px;
+}
+
+#sitemenu a:hover {
+    text-decoration:underline;
+}
+
+#sitemenu a.lastlink {
+    border-right:0;
+    padding-right:10px;
+}
+
+#middlepane {
+    padding:35px 0 40px 0;
+}
+
+.leftpane {
+    background:#d8d8d8;
+    float:left;
+    width:550px;
+    margin:40px 0;
+    padding:40px 50px 30px 50px;
+}
+
+
+.leftpane h1 {
+    margin-bottom:30px;
+    border-bottom:5px solid #d8d8d8;
+    padding-bottom:20px;
+}
+
+.leftpane .profilephoto img {
+    float: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.leftpane .portfolio {
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.leftpane .portfolio img{
+    border: 2px solid #d8d8d8;
+    clear: left;
+    display: block;
+    max-width : 100%;
+    max-height: 100%;
+    width: 226x;
+    margin: 25px 20px 0 20px;
+}
+
+.leftpane .portfolio figcaption {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: center;
+    float: left;
+    position: absolute;
+    max-width: 100%;
+    max-height: 20%;
+    width: 200px;
+    bottom: 20px;
+    margin-left: 20px;
+    padding: 15px 15px;
+}
+
+.leftpane label {
+    font-size:1.3em;
+    font-weight:bold;
+    display: block;
+    margin-bottom:15px;
+}
+
+.leftpane input {
+    font-size: 1.3em;
+    display: block;
+    width: 96%;
+    margin-bottom: 40px;
+    padding: 8px 4px 8px 12px;
+}
+
+.leftpane textarea {
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 1.1em;
+    display: block;
+    max-width: 96%;
+    max-height: 240px;
+    width: 96%;
+    height: 160px;
+    margin-bottom: 15px;
+    padding: 8px 4px 8px 12px;
+}
+
+.leftpane #formsubmit {
+    background-color:#4aaaa5;
+    color:#d8d8d8;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin-top: 40px;
+    padding: 10px 0;
+}
+
+.leftpane p {
+    line-height:1.6em;
+    padding-bottom: 20px;
+}
+
+.rightpane {
+    background-color:#d8d8d8;
+    float: right;
+    width: 220px;
+    margin: 40px 0;
+    padding: 45px 25px 35px 25px;
+}
+
+
+.rightpane h2 {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #d8d8d8;
+    padding-bottom: 18px;
+}
+
+.rightpane figure {
+    margin: auto;
+}
+
+.rightpane img {
+    width :100px;
+    height:100px;
+    margin: 6%;
+    padding-left: 50px;
+}
+
+.rightpane img:hover{
+    background-color:#d8d8d8;
+    opacity: 0.50;
+}
+
+/* Bottom Pane */
+#bottompane {
+    background-color:#666666;
+    border-top: 15px solid #4aaaa5;
+    padding         : 40px;
+}
+
+#copyright {
+    color:#ffffff;
+    text-align: center;
+}
+
+
+   /*980px syle sheet*/
+    
+@media all and (max-width: 980px) and (min-width: 769px), all and (max-device-width: 980px) and (min-device-width: 769px) {
+
+    .container {
+        width:98%; 
+        margin: auto;
+    }
+
+    #sitemenu {
+        text-align: right;
+        position: absolute;
+        width: 440px;
+        top: 0;
+        right: 0;
+    }
+
+    .leftpane {
+        font-size: 1.65vw;                  
+        width: 58.32%;                  
+        margin: 4.12% 0;                 
+        padding: 4.12% 5.24% 3.12% 5.24%; 
+    }
+
+    .leftpane h1 {
+        margin-bottom : 5.45%;
+        padding-bottom: 3.64%; 
+    }
+
+    .leftpane .profilephoto img {
+        display: block;
+        float: none;
+        max-width: 50%;
+        max-height: 50%;
+        width: 50%;
+        margin: auto;
+        margin-top: 0.4em;
+        margin-bottom: 1.6em;
+    }
+
+    .leftpane .portfolio {
+        width: 75%;
+        margin: 0 16% 6% 16%;
+    }
+
+    .leftpane .portfolio img {
+        width: 100%;
+        margin: 1.75% auto;
+    }
+
+    .leftpane .portfolio figcaption {
+        width: 85%;
+        bottom: 7.2%;
+        left: 0;
+        padding: 5.3%;
+    }
+
+    .leftpane label {
+        margin-bottom: 2.65%;
+    }
+
+    .leftpane input {
+        margin-bottom: 2.68%;
+        padding: 1.42% 0.75% 1.42% 2.19%; 
+    }
+
+    .leftpane textarea {
+        height: 29.18%;
+        margin-bottom: 2.72%;
+        padding: 1.42% 0.75% 1.42% 2.19%;
+    }
+
+    .rightpane {
+        font-size: 1.65vw;
+        width: 22.72%;                  
+        margin: 4.18% 0;                 
+        padding: 4.60% 2.61% 3.62% 2.61%; 
+    }
+
+    .rightpane h2 {
+        margin-top: 0.92%;  
+        margin-bottom: 11.25%; 
+        padding-bottom: 8.20%; 
+    }
+}
+
+
+/*768px Style Sheet*/
+
+@media all and (max-width: 768px) and (min-width: 641px), all and (max-device-width: 768px) and (min-device-width: 641px) {
+    body {
+        font-size: 12px;
+        font-size: 2.1vw;
+    }
+    
+    .container {
+        width: 98%;
+    }
+
+    #sitename {
+        width: 31.75%;
+        padding: 3.81% 2.53%;
+    }
+
+    #sitemenu {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 4.32% 1.22%;
+    }
+
+    #sitemenu a {
+        margin: 0 1.61%;
+        padding-right: 3.92%;
+    }
+
+    #middlepane {
+        padding: 4.52% 0 5.22% 0;
+    }
+
+    .leftpane {
+        width: 89.58%;
+        margin: 4.15% 0 7% 0;
+        padding: 4.15% 5.22% 3.13% 5.22%;
+    }
+
+    .leftpane h1 {
+        margin-bottom: 5.42%;
+        padding-bottom: 3.56%;
+    }
+
+    .leftpane .profilephoto img {
+        max-width : 26%;
+        max-height: 26%;
+        width: 26%;
+        margin: 0.35em 8% 1.45em 0;
+    }
+
+    .leftpane .portfolio {
+        width: 41.45%;
+        margin: 0 3% 4% 3%;
+    }
+
+    .leftpane .portfolio img {
+        width: 100%;
+        margin: 1.5%;
+    }
+
+    .leftpane .portfolio figcaption {
+        width: 94.45%;
+        bottom: 7%;
+        left: 1.35%;
+        padding: 3.60%;
+    }
+
+    .leftpane label {
+        margin-bottom: 2.73%;
+    }
+
+    .leftpane input {
+        margin-bottom: 2.73%;
+        padding: 1.42% 0.70% 1.42% 2.12%;
+    }
+
+    .leftpane textarea {
+        height: 29.09%;
+        margin-bottom: 2.73%;
+        padding: 1.45% 0.72% 1.45% 2.18%; 
+    }
+
+    .rightpane {
+        clear: both;
+        float: none;
+        width: 89.58%;
+        margin: 4.17% 0;
+        padding: 4.17% 5.21% 3.13% 5.21%;
+    }
+
+    .rightpane h2 {
+        margin-bottom : 5%;
+        padding-bottom: 4%;
+    }
+
+    .rightpane img {
+        width : 20%;
+        margin: 3%;
+    }
+
+    #bottompane {
+        padding: 5.5%;
+    }
+}
+
+/*640px style sheet*/
+
+@media all and (max-width: 640px), all and (max-device-width: 640px) {
+
+    body {
+        font-size: 20px;
+        font-size: 2.75vw;
+    }
+    
+    .container {
+        width: 100%;
+    }
+
+    #sitename {
+        float: none;
+        width: 100%;
+        padding: 4.5% 0;
+    }
+
+    #sitemenu {
+        text-align: center;
+        float: none;
+        position: static;
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    #sitemenu a {
+        margin: 0 2.5%;
+        border: 1px;
+        padding: 2% 5%;
+    }
+
+    #middlepane {
+        width: 98%;
+        padding: 5.42% 1.4% 6.22% 1%;
+    }
+
+    .leftpane {
+        width: 89.52%;
+        margin: 4.21% 0 7% 0;
+        padding: 4.21% 5.22% 3.11% 5.22%; 
+    }
+
+    .leftpane h1 {
+        margin-bottom: 6.2%;
+        padding-bottom: 5.5%;
+    }
+
+    .leftpane .profilephoto img {
+        display: block;
+        float: none;
+        max-width: 50%;
+        max-height: 50%;
+        width: 50%;
+        margin: auto;
+        margin-top: 0.4em;
+        margin-bottom: 1.6em;
+    }
+
+    .leftpane .portfolio {
+        width : 75%;
+        margin: 0 16% 5% 16%;
+    }
+
+    .leftpane .portfolio img {
+        width: 100%;
+        margin: auto;
+        margin-top: 1.82%;
+        margin-bottom: 1.82%;
+    }
+
+    .leftpane .portfolio figcaption {
+        width  : 90%;
+        bottom : 7.5%;
+        left   : 0;
+        padding: 5.5%;
+    }
+
+    .leftpane label {
+        margin-bottom: 2.73%;
+    }
+
+    .leftpane input {
+        margin-bottom: 2.73%;
+        padding: 1.45% 0.72% 1.45% 2.18%; 
+    }
+
+    .leftpane textarea {
+        height: 29.09%;
+        margin-bottom: 2.73%;
+        padding: 1.45% 0.72% 1.45% 2.18%;
+    }
+
+    .leftpane p {
+        clear: both;
+    }
+
+    .rightpane {
+        clear: both;
+        float: none;
+        width: 89.58%;
+        margin: 4.17% 0;
+        padding: 4.17% 5.21% 3.13% 5.21%;
+    }
+
+    .rightpane h2 {
+        margin-bottom : 6%;
+        padding-bottom: 5%;
+    }
+
+    .rightpane img {
+        width : 15%;
+        margin: 2%;
+    }
+
+    .rightpane img:hover {
+        opacity: 1;
+    }
+
+    #bottompane {
+        padding: 5.5%;
+    }
+}
